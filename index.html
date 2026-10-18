@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset ="UTF-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>Type Racer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<bady>
+    <main class="game">
+    
+    <!--DASHBOARD-->
+    <header class="dashboard">
+        <div class="logo">
+            <span class="logo-light"></span>
+            <h1>TYPE<span>RACER</span></h1>
+        </div>
+        <div class="gauges">
+            <div class="gauge"><span class="gauge label">WPM</span><span class= "gauge value" id="wpm">0</span></div>
+            <div class="gauge"><span class="gauge label">ACC</span><span class= "gauge value" id="acc">100%</span></div>
+            <div class="gauge"><span class="gauge label">TIME</span><span class= "gauge value" id="time">0.0</span></div>
+        </div>
+    </header>
+    <!--PACE CAR SELECTOR-->
+    <section class="controls">
+        <span class=""controls-label">PACE CAR</span>
+        <div class="pace-buttons" id="paceButtons">
+            <button type="button" data-wpm="30">30</button>
+            <button type="button" data-wpm="45">45</button>
+            <button type="button" data-wpm="60" class="active">60</button>
+            <button type="button" data-wpm="80">80</button>
+            <button type="button" data-wpm="110">110</button>
+        </div>
+        <button type="button" class="restrat-btn" id="restartBtn">NEW RACE<kbd>ESC</kbd></button>
+    </section>
+    <!--The race track-->
+    <section class="track"id="track">
+        <div class="Finish-line"></div>
+        <!--Pace car lane-->
+        <div clas="lane" id="ghostShot">
+            <div class="car-shot ghost" id="ghostShot">
+                <img src="images/BlueCar.png" alt="Pace car" class="car-img">
+            </div>
+        </div>
+        <!-- Player lane -->
+        <div class="lane" id="playerLane">
+            <div class="car-slot player" id="playerSlot">
+                <img src="images/RedCar.png" alt="Your car" class="car-img">
+             </div>
+        </div>
+        <div class="finish-banner" id="finishBanner">FINISH!</div>
+    </section>
+
+
+</bady>
